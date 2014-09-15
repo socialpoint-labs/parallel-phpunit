@@ -1,0 +1,13 @@
+{
+    "name":         "socialpoint/parallel-phpunit",
+    "description":  "Parallel Test Cases Runner for PHPUnit",
+    "keywords":     ["phpunit", "parallel", "tests", "testing"],
+    "homepage":     "https://github.com/socialpoint/parallel-phpunit",
+    "authors":      [
+        {
+            "name":      "Felix Carmona",
+            "email":     "felix.carmona@socialpoint.es"
+        }
+    ],
+    "bin": ["parallel-phpunit"]
+}
