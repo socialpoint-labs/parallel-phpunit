@@ -10,7 +10,7 @@ To install with Composer, execute the following command inside your project:
 
 .. code-block:: bash
 
-    composer require socialpoint/parallel-phpunit
+    composer require --dev socialpoint/parallel-phpunit
 
 After installation, the binary can be found at ``vendor/bin/parallel-phpunit``
 
