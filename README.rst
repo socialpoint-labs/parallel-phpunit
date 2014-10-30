@@ -6,13 +6,11 @@ Installation
 ------------
 Composer
 ~~~~~~~~
-To install with composer add the following to your ``composer.json`` file
+To install with Composer, execute the following command inside your project:
 
-.. code-block:: php
+.. code-block:: bash
 
-    "require": {
-        "socialpoint/parallel-phpunit": "dev-master"
-    }
+    composer require socialpoint/parallel-phpunit
 
 After installation, the binary can be found at ``vendor/bin/parallel-phpunit``
 
