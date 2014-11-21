@@ -20,4 +20,5 @@ setup(
              'parallel-phpunit = parallelphpunit:main',
          ],
     },
+    test_suite="parallelphpunit.tests.get_tests"
 )

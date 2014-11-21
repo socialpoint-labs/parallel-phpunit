@@ -4,4 +4,5 @@
 *.so
 build/
 dist/
-vendor/
+vendor
+composer.lock

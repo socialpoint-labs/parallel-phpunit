@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - 2.6
+  - 2.7
+
+install:
+  - sudo apt-get -y install php5
+  - pip install -r requirements-test.txt
+  - python setup.py install
+  - wget http://getcomposer.org/composer.phar
+  - php composer.phar install
+
+script:
+  - nosetests
+
+notifications:
+  email: false

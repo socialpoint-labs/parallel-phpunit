@@ -11,7 +11,7 @@ def main():
     parser.add_argument('--max_concurrency', type=int, default=8, help='Max TestCase processing concurrency (8 by default)')
     parser.add_argument('--configuration', '-c', type=str, help='Read configuration from XML file')
     parser.add_argument('--phpunit_bin', default='phpunit', type=str, help='phpunit bin path')
-    parser.add_argument('--test_suffix', default='Test.php', type=str, help='phpunit bin path')
+    parser.add_argument('--test_suffix', default='Test.php', type=str, help='phpunit test suffix (by default Test.php)')
 
     args = parser.parse_args()
 

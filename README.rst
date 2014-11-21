@@ -46,4 +46,4 @@ Usage is as follows:
       --phpunit_bin PHPUNIT_BIN
                             phpunit bin path
       --test_suffix TEST_SUFFIX
-                            phpunit bin path
+                            phpunit test suffix (by default Test.php)
