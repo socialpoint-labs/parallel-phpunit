@@ -9,5 +9,8 @@
             "email":     "felix.carmona@socialpoint.es"
         }
     ],
-    "bin": ["parallel-phpunit"]
+    "bin": ["parallel-phpunit"],
+    "require-dev": {
+        "phpunit/phpunit": "~4.1.0"
+    }
 }
