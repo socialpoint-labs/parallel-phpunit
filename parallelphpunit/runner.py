@@ -2,7 +2,8 @@ from parallelphpunit.files import find_test_case_files
 import subprocess
 import re
 from parallelphpunit.suite import Report, ReportScreen
-from os.path import abspath
+from os.path import abspath, isfile
+from os import getcwd
 
 
 class TestRunner:
@@ -18,7 +19,18 @@ class TestRunner:
     ):
         self._test_cases_path = test_cases_path
         self._max_concurrency = max_concurrency
-        self._configuration_path = None if configuration_path is None else abspath(configuration_path)
+        self._configuration_path = None
+
+        if configuration_path is None:
+            xml_files = ('phpunit.xml', 'phpunit.xml.dist')
+            for xml_file in xml_files:
+                xml_file_path = '%s/%s' % (getcwd().rstrip('/'), xml_file)
+                if isfile(xml_file_path):
+                    self._configuration_path = xml_file_path
+                    break
+        else:
+            self._configuration_path = abspath(configuration_path)
+
         self._phpunit_bin = phpunit_bin
         self._test_suffix = test_suffix
 
